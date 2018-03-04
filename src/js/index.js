@@ -91,7 +91,7 @@ function leftClick(dom) {
     setTimeout(function () {
       alertBox.style.display = 'block';
       close.style.display = 'block';
-      alertImg.style.backgroundImage = 'url(/Users/lius/Desktop/面试/面试项目/扫雷/src/img/fail.jpg)';
+      alertImg.style.backgroundImage = 'url(http://r.photo.store.qq.com/psb?/V12ZEwXZ3XJLHy/In2QT.U4D5MAI3CWoCkC3ooZ.b0DF*JNYG7BazuxWmo!/r/dJUAAAAAAAAA)';
     }, 100)
   } else {
     var n = 0;
@@ -143,7 +143,7 @@ function rightChlick(dom) {
   score.innerHTML = mineOver;
   if (mineOver == 0) {
     setTimeout(function () {
-      alertImg.style.backgroundImage = 'url(/Users/lius/Desktop/面试/面试项目/扫雷/src/img/success.jpeg)';
+      alertImg.style.backgroundImage = 'url(http://m.qpic.cn/psb?/V12ZEwXZ3XJLHy/RgeBLJKEU6OJLWJYkH5LoMTGrCO6MDGv03GSgjLQuRg!/b/dMgAAAAAAAAA&bo=AAQABAAEAAQRCT4!&rf=viewer_4)';
       alertBox.style.display = 'block';
       close.style.display = 'block';
     }, 100)
