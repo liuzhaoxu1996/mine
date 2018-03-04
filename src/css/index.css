@@ -30,10 +30,11 @@
   margin: 20px auto;
   border-top: 1px solid #b25f27;
   border-left: 1px solid #b25f27;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); */
   width: 500px;
   height: 500px;
   transform: perspective(800px) rotateX(30deg);
+  overflow: hidden;
 }
 
 .flagBox {

@@ -20,12 +20,12 @@ var lock = true;
 function bindEvent() {
   startBtn.onclick = function () {
     if (lock) {
+      box.innerHTML = '';
       lock = false;
       box.style.display = 'block';
       flagBox.style.display = 'block';
       // 生成棋盘，雷
       init();
-      
     }
   }
 }
@@ -46,6 +46,7 @@ close.onclick = function () {
   alertBox.style.display = 'none';
   close.style.display = 'none';
   lock = true;
+  startBtn.click();
 }
 bindEvent();
 
@@ -73,7 +74,7 @@ function init() {
       mineMap[mineIndex].mine = 1;
       block[mineIndex].classList.add('isLei');
       minesNum--; 
-      console.log(mineIndex);
+      // console.log(mineIndex);
     }
   }
 }
@@ -82,7 +83,7 @@ function leftClick(dom) {
   if (dom.classList.contains('flag')) {
     return;
   }
-  console.log(dom)
+  // console.log(dom)
   var isLei = document.getElementsByClassName("isLei");
   if (dom.classList.contains('isLei')) {
     for (let i = 0; i < isLei.length; i++) {
